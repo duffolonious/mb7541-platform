@@ -1,0 +1,16 @@
+sled
+====
+V1.1 2012-04-30
+
+wd_bp
+=====
+V1.1 2012-04-30
+V1.2 2012-05-31 Fixed watch dog can issue reset after run watch dog's lanbypass.Right now. 
+V1.3 2012-06-06 Setting GPIO30 value for type status for h/w desige.
+
+sw_btn
+======
+V1.0 2012-04-17
+
+
+

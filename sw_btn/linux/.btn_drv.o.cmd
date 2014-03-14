@@ -1,0 +1,1 @@
+cmd_/home/tt/mb7540-plat-misc-v1/sw_btn/linux/btn_drv.o := ld -m elf_i386   -r -o /home/tt/mb7540-plat-misc-v1/sw_btn/linux/btn_drv.o /home/tt/mb7540-plat-misc-v1/sw_btn/linux/drv_main.o /home/tt/mb7540-plat-misc-v1/sw_btn/linux/ioaccess.o 
