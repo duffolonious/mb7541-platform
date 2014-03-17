@@ -132,6 +132,7 @@ void print_usage(char* argv0)
         printf("%s --start (Start Watchdog Timer)\n", argv0);
 #endif
         printf("%s --stop (Stop Watchdog Timer)\n", argv0);
+        printf("%s --dump (Dump values)\n", argv0);
 }
 
 
@@ -218,6 +219,9 @@ int main( int argc, char** argv )
                 else
                         printf("OK\n");
 #endif
+        }
+        else if ( !strcmp(argv[1], "--dump")) {
+                show_dump();
         }
 
 #if BYPASS_PAIR_NUMBER > 0

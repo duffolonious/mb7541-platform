@@ -560,4 +560,20 @@ void set_wdto_state_system_bypass(void)
 	return;
 }
 
+void show_dump()
+{
+  printf("runtime bypass pair 1: %s\n",
+    (read_w83627_reg(RUNTIME_BYPASS_PAIR1_LDN, RUNTIME_BYPASS_PAIR1_REG) &
+     RUNTIME_BYPASS_PAIR1_ENABLE)?
+    "enabled" : "disabled");
+  printf("off-mode bypass pair 1: %s\n",
+    ((read_w83627_reg(OFFMODE_BYPASS_PAIR1_LDN, OFFMODE_BYPASS_PAIR1_REG) & OFFMODE_BYPASS_PAIR1_BIT) &
+     OFFMODE_BYPASS_PAIR1_ENABLE)?
+    "enabled" : "disabled");
+  printf("watchdog timer state : %s\n", //bypass or reset
+    (read_w83627_reg(0x9, 0xF1) & SIO_GPIO_30_BIT)?
+    "reset" : "bypass");
+  return;
+}
+
 #endif

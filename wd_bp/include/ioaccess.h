@@ -75,6 +75,7 @@ void set_runtime_bypass_disable(unsigned long pair_no);
 void set_wdto_state_system_reset(void);
 void set_wdto_state_system_bypass(void);
 
+void show_dump();
 
 /* Pair definition */
 #define BYPASS_PAIR_1     (0x1 << 4)
